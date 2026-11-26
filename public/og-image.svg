@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#081028"/>
+      <stop offset="1" stop-color="#2139bd"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="80" y="270" fill="#ffffff" font-family="Arial, sans-serif" font-size="76" font-weight="700">UPTAC Predictor</text>
+  <text x="80" y="350" fill="#bfd0ff" font-family="Arial, sans-serif" font-size="38">Your Rank. Your College. Your Future.</text>
+  <text x="80" y="450" fill="#93b0ff" font-family="Arial, sans-serif" font-size="26">Verified historical UPTAC opening &amp; closing ranks · B.Tech · Uttar Pradesh</text>
+</svg>

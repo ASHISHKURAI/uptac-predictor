@@ -1,0 +1,16 @@
+{
+  "source": "UPTAC official portal \u2013 OR-CR Details",
+  "source_url": "https://uptac.samarth.edu.in/index.php/cut-off-matrix/index",
+  "programme_id": 5,
+  "academic_year": 2026,
+  "fetched_at": "2026-11-26T18:34:04.719427+00:00",
+  "user_agent": "UPTACPredictorDataFetcher/1.0 (+admin contact in README)",
+  "pages_fetched": 534,
+  "rows_written": 26653,
+  "first_page": 1,
+  "last_page": 534,
+  "total_records_reported": 26653,
+  "total_pages": 534,
+  "complete": true,
+  "stopped_reason": null
+}

@@ -1,0 +1,44 @@
+# Supabase CLI configuration (https://supabase.com/docs/guides/cli/config)
+# Link your project with: supabase link --project-ref <your-project-ref>
+project_id = "uptac-predictor"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public"]
+extra_search_path = ["public", "extensions"]
+# PostgREST row limit per request – the app paginates large tables explicitly.
+max_rows = 1000
+
+[db]
+port = 54322
+major_version = 17
+
+[auth]
+enabled = true
+site_url = "http://localhost:5173"
+additional_redirect_urls = ["http://localhost:5173/auth/reset-password", "http://localhost:5173/dashboard"]
+jwt_expiry = 3600
+enable_signup = true
+
+[auth.email]
+enable_signup = true
+double_confirm_changes = true
+enable_confirmations = true
+
+[storage]
+enabled = true
+file_size_limit = "50MiB"
+
+# Edge Functions perform their own authorization:
+#   predict         – public (validated input, RLS-restricted reads, rate limited)
+#   process-import  – admin JWT (checked in the database) or X-Processor-Token
+#   monitor-uptac   – admin JWT or X-Monitor-Secret (scheduler)
+[functions.predict]
+verify_jwt = false
+
+[functions.process-import]
+verify_jwt = false
+
+[functions.monitor-uptac]
+verify_jwt = false

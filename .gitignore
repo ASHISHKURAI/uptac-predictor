@@ -1,0 +1,25 @@
+node_modules
+dist
+dist-ssr
+*.local
+.env
+.env.*
+!.env.example
+.vercel
+coverage
+*.tsbuildinfo
+.DS_Store
+Thumbs.db
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+processor/.env
+processor/output/
+# Supabase
+supabase/.branches
+supabase/.temp
+supabase/functions/.env
+.screens/

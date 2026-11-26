@@ -1,0 +1,5 @@
+# OPTIONAL: Camelot fallback for PDFs where PyMuPDF finds no tables.
+# Camelot needs OpenCV and (for the lattice flavour) Ghostscript; install it only where
+# those system libraries are available. The service detects Camelot at runtime and
+# skips the fallback when it is not importable.
+camelot-py==2.2.0

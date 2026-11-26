@@ -1,0 +1,13 @@
+# Runtime dependencies – verified on Python 3.14 (local) and Python 3.12 (Docker image).
+fastapi==0.165.0
+uvicorn==0.54.0
+httpx==0.29.0
+pydantic==2.14.4
+pydantic-settings==2.16.3
+python-multipart==0.0.34
+# PyMuPDF 1.28.x is a dependency-free abi3 wheel. PyMuPDF 2.x pulls in onnxruntime and
+# layout models that this service does not need, so it is intentionally not used.
+pymupdf==1.28.2
+pandas==3.1.1
+openpyxl==3.1.5
+xlrd==2.0.2
